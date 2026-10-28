@@ -1,22 +1,19 @@
 Print = "Current asset id is %lld"
-ScriptContextResume = "Can't resume script in this context" Straight Forward
-ScriptContextToResume is inside ScriptContextResume Callers its invalid facet access
+ScriptContextResume = "$Script" pretty straight forward actually
 KTable = "Trying to call method on object of type: `%s` with incorrect arguments." its a qword_xxxxxxx
+
+
 Luau_Execute = "C stack overflow" 4th xref takes only 1 arg
 LuaO_NilObject = "Attempt to migrate WeakObjectRef across VM boundary" go inside the last return its an unk_xxxxxxx
+
 Reflection_Types = "Attribute {} of type {} is not supported for comparison" look above for something like Buf2[0] = (void *)sub_xxxxxx(v22); go inside the sub_xxxxx
-TaskSchedulerPointer = "ScriptContextTaskQueue" first qword and object
+
+tasksched_pointer = "Out of arbiter nodes: Increase the FInt::TaskSchedulerMaxNumOfArbiters value" first qword ig
 fireproximityprompt = "ProximityPrompt_Triggered" func + string
 getlspointer = "GetStyled(): Property %s is write-only" func second call
 requirebypass = "Cannot require a non-RobloxScript module from a RobloxScript" xref
 tasksynchronize = "task.synchronize() may only be called from a script that is a descendant of an Actor"
 taskwait = "task.wait is not available for AuroraScripts"
-taskdefer = "task.defer is not available for AuroraScripts"
-castargs = "Max lua stack size reached"
 taskdesynchronize = "task.desynchronize() may only be called from a script that is a descendant of an Actor"
 setfflag = "[FLog::FastLogValueChanged] Setting variable {}" func at xref
 RawScheduler = "HumanoidParallelManagerTaskQueue"  dword before xref
-luau_load = "bytecode corrupted" func at xref
-Opcodelookuptable is inside luau_load
-identityptr = "Current identity is %d" its a  qword_xxxxxxx  called by another func on top  the func that calls it is gettlspointer
-RobloxLogCrash = "Invalid Facet Access" sub_xxxxxxx (0, "Invalid Facet Access"); like ts
